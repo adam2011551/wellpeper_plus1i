@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أنمي / Anime</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #808080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .android-frame {
+            width: 360px; /* عرض إطار يشبه تطبيق Android */
+            height: 640px; /* ارتفاع إطار يشبه تطبيق Android */
+            background: #5e1d70;
+            border-radius: 30px; /* حواف مستديرة للإطار */
+            padding: 20px;
+            position: relative;
+            overflow: hidden; /* إخفاء التمرير */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            background: #5e1d70;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            font-family: 'Lexend', sans-serif;
+            max-height: 600px; /* تحديد الحد الأقصى للارتفاع لمحتوى الصور */
+            overflow-y: scroll; /* تمكين التمرير داخل المحتوى */
+            width: 100%; /* عرض المحتوى كامل عرض الإطار */
+            -ms-overflow-style: none;  /* لإخفاء التمرير في IE و Edge */
+            scrollbar-width: none;  /* لإخفاء التمرير في Firefox */
+        }
+        .content::-webkit-scrollbar {
+            display: none;  /* لإخفاء التمرير في Chrome و Safari */
+        }
+        h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .image-container {
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .download-btn {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #8f32ed;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .download-btn:hover {
+            background-color: #6e27c1;
+        }
+        .home-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #8f32ed;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-btn:hover {
+            background-color: #6e27c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="android-frame">
+        <div class="content">
+            <h1>أنمي / Anime</h1>
+            <p>محتوى صفحة الأنمي هنا.</p>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/02/a2/55/02a255ac05d66064f6f31b6dc2f136c3.jpg" alt="Anime Image 1">
+                <a href="https://i.pinimg.com/236x/02/a2/55/02a255ac05d66064f6f31b6dc2f136c3.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/d3/00/17/d30017fb9d2845492d4a1ee0590ba411.jpg" alt="Anime Image 2">
+                <a href="https://i.pinimg.com/236x/d3/00/17/d30017fb9d2845492d4a1ee0590ba411.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/89/9e/48/899e48b25405535659a933568cefc40a.jpg" alt="Anime Image 3">
+                <a href="https://i.pinimg.com/236x/89/9e/48/899e48b25405535659a933568cefc40a.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/474x/b8/c9/8c/b8c98c7593ec0f8065da4cc8dc5d1686.jpg" alt="Anime Image 4">
+                <a href="https://i.pinimg.com/474x/b8/c9/8c/b8c98c7593ec0f8065da4cc8dc5d1686.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/19/29/18/1929183fa55fec8334a01d9a568eb1d7.jpg" alt="Anime Image 5">
+                <a href="https://i.pinimg.com/236x/19/29/18/1929183fa55fec8334a01d9a568eb1d7.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/34/84/fa/3484fa2d1597625c85cd7d12a2d34ef4.jpg" alt="Anime Image 6">
+                <a href="https://i.pinimg.com/236x/34/84/fa/3484fa2d1597625c85cd7d12a2d34ef4.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/69/12/09/6912096b8f4d447f299be6938d31907c.jpg" alt="Anime Image 7">
+                <a href="https://i.pinimg.com/236x/69/12/09/6912096b8f4d447f299be6938d31907c.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/474x/63/a0/db/63a0dbcb0ee6d8c5567186aa0d9a2a0d.jpg" alt="Anime Image 8">
+                <a href="https://i.pinimg.com/474x/63/a0/db/63a0dbcb0ee6d8c5567186aa0d9a2a0d.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/ae/c7/a4/aec7a481cc2aca79d22e777c4bfcfc85.jpg" alt="Anime Image 9">
+                <a href="https://i.pinimg.com/236x/ae/c7/a4/aec7a481cc2aca79d22e777c4bfcfc85.jpg" download class="download-btn">تحميل</a>
+            </div>
+
+            <div class="image-container">
+                <img src="https://i.pinimg.com/236x/13/20/35/132035f7ca35a07640fc988097cffd14.jpg" alt="Anime Image 10">
+                <a href="https://i.pinimg.com/236x/13/20/35/132035f7ca35a07640fc988097cffd14.jpg" download class="download-btn">تحميل</a>
+            </div>
+        </div>
+        <a href="index.html" class="home-btn">الصفحة الرئيسية</a>
+    </div>
+</body>
+</html>
